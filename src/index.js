@@ -1,4 +1,4 @@
-export function getDiscountObject(discountCodes, discountCode) {
+export function getDiscountObject (discountCodes, discountCode) {
   return discountCodes[discountCode]
 }
 
