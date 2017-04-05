@@ -7,7 +7,7 @@
     "dev": "babel src/index.js -o dist/index.js --presets=es2015 --watch",
     "babel": "babel src/index.js -o dist/index.js --presets=es2015",
     "dev-test": "tape-watch -r babel-register babel-preset-es2015 test.js | faucet",
-    "test": "tape -r babel-register babel-preset-es2015 test.js | faucet",
+    "test": "tape -r babel-register babel-preset-es2015 test.js && standard",
     "prepublish": "npm run babel",
     "release": "np"
   },
